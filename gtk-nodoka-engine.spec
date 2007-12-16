@@ -6,7 +6,7 @@ Version:        0.6
 Release:        %mkrel 1
 Summary:        The Nodoka GTK Theme Engine
 
-Group:          System Environment/Libraries
+Group:          Graphical desktop/GNOME
 License:        GPLv2
 URL:            http://fedoraproject.org/wiki/Artwork/NodokaTheme
 Source0:        gtk-nodoka-engine-%{version}.tar.gz
