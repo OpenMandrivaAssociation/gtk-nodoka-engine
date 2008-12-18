@@ -2,17 +2,14 @@
 %define nogtk2 %(pkg-config gtk+-2.0 --modversion &> /dev/null; echo $?)
 
 Name:           gtk-nodoka-engine
-Version:        0.6
-Release:        %mkrel 3
+Version:        0.7.2
+Release:        %mkrel 1
 Summary:        The Nodoka GTK Theme Engine
 
 Group:          Graphical desktop/GNOME
 License:        GPLv2
 URL:            http://fedoraproject.org/wiki/Artwork/NodokaTheme
 Source0:        gtk-nodoka-engine-%{version}.tar.gz
-Patch0:         gtk-nodoka-engine-0.6-tooltips.patch
-Patch1:         gtk-nodoka-engine-0.6-treeview.patch
-Patch2:         gtk-nodoka-engine-0.6-gimp-crash.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires:  gtk2-devel
@@ -29,9 +26,6 @@ a default Nodoka theme featuring the engine.
 
 %prep
 %setup -q
-%patch0 -p1 -b .tooltips
-%patch1 -p1 -b .treeview
-%patch2 -p1 -b .gimp-crash
 
 %build
 %configure2_5x
@@ -55,4 +49,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %doc AUTHORS ChangeLog COPYING CREDITS NEWS README TODO
 %{_libdir}/gtk-2.0/2.10.0/engines/libnodoka.so
-%{_datadir}/themes/Nodoka
+%{_datadir}/themes/Nodoka*/gtk-2.0/gtkrc
