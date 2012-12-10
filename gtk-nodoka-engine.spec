@@ -59,3 +59,32 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc COPYING
 %{_datadir}/themes/Nodoka-*
+
+
+%changelog
+* Fri Oct 22 2010 Ahmad Samir <ahmadsamir@mandriva.org> 0.7.5-1mdv2011.0
++ Revision: 587217
+- Update to 0.7.5
+- Use actual source url
+- Split the extra themes in a noarch package (Fedora). And make it suggested by
+  the main package
+- Clean spec
+
+* Fri Sep 11 2009 Thierry Vignaud <tv@mandriva.org> 0.7.2-2mdv2010.0
++ Revision: 437831
+- rebuild
+
+* Thu Dec 18 2008 Jérôme Soyer <saispo@mandriva.org> 0.7.2-1mdv2009.1
++ Revision: 315550
+- New release 0.7.2
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0.6-3mdv2009.0
++ Revision: 246702
+- rebuild
+
+* Sun Dec 16 2007 Jérôme Soyer <saispo@mandriva.org> 0.6-1mdv2008.1
++ Revision: 120637
+- Fix RPM Groups
+- import gtk-nodoka-engine
+
+
