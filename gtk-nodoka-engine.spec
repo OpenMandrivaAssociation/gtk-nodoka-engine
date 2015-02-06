@@ -3,7 +3,7 @@
 
 Name:           gtk-nodoka-engine
 Version:        0.7.5
-Release:        %mkrel 1
+Release:        2
 Summary:        The Nodoka GTK Theme Engine
 Group:          Graphical desktop/GNOME
 License:        GPLv2
