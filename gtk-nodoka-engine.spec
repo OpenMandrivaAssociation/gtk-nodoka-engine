@@ -7,7 +7,7 @@ Release:        2
 Summary:        The Nodoka GTK Theme Engine
 Group:          Graphical desktop/GNOME
 License:        GPLv2
-URL:            http://fedoraproject.org/wiki/Artwork/NodokaTheme
+URL:            https://fedoraproject.org/wiki/Artwork/NodokaTheme
 Source0:        https://fedorahosted.org/released/nodoka/%{name}-%{version}.tar.gz
 BuildRequires:  gtk2-devel >= 2.18
 %if 0%{?nogtk2}
