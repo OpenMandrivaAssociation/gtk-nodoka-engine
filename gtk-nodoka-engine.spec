@@ -9,6 +9,11 @@ Group:          Graphical desktop/GNOME
 License:        GPLv2
 URL:            https://fedoraproject.org/wiki/Artwork/NodokaTheme
 Source0:        https://fedorahosted.org/released/nodoka/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  gtk2-devel >= 2.18
 %if 0%{?nogtk2}
 Requires:       gtk2
